@@ -1,15 +1,12 @@
 import React from "react";
 
 class Clock2 extends React.Component {
-  state = {
-    date: new Date(),
-  };
-
-  tick = () => {
-    this.setState({
+  constructor() {
+    super();
+    this.state = {
       date: new Date(),
-    });
-  };
+    };
+  }
 
   componentDidMount() {
     setInterval(() => this.tick(), 1000);
@@ -18,6 +15,12 @@ class Clock2 extends React.Component {
   componentWillUnmount() {
     clearInterval(this.tick());
   }
+
+  tick = () => {
+    this.setState({
+      date: new Date(),
+    });
+  };
 
   render() {
     const { date } = this.state;

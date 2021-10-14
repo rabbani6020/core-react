@@ -1,3 +1,7 @@
+
+// External imports
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <>
@@ -6,41 +10,36 @@ const Header = () => {
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-3">
               <div className="logo">
-                <a href="/">React App</a>
+                <Link to="/">React App</Link>
               </div>
             </div>
             <div className="col-lg-9 me-auto">
               <div className="menu-wrap">
                 <ul className="menu  justify-content-end">
                   <li className="menu__item">
-                    <a href="#" className="menu__link">
-                      {" "}
-                      Home{" "}
-                    </a>
+                    <Link to="/" className="menu__link">
+                      Home
+                    </Link>
                   </li>
                   <li className="menu__item">
-                    <a href="#" className="menu__link">
-                      {" "}
-                      About{" "}
-                    </a>
+                    <Link to="/about" className="menu__link">
+                      About
+                    </Link>
                   </li>
                   <li className="menu__item">
-                    <a href="#" className="menu__link">
-                      {" "}
-                      Service{" "}
-                    </a>
+                    <Link to="/service" className="menu__link">
+                      Service
+                    </Link>
                   </li>
                   <li className="menu__item">
-                    <a href="#" className="menu__link">
-                      {" "}
-                      Blog{" "}
-                    </a>
+                    <Link to="/blog" className="menu__link">
+                      Blog
+                    </Link>
                   </li>
                   <li className="menu__item">
-                    <a href="#" className="menu__link">
-                      {" "}
-                      Contact Us{" "}
-                    </a>
+                    <Link to="/contact" className="menu__link">
+                      Contact Us
+                    </Link>
                   </li>
                   {/* <li className="menu__item menu__item--has-child">
                     <a href="#" className="menu__link">

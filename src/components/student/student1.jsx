@@ -1,4 +1,4 @@
-const Student = ({ name, classNo, age, result, language,myObj }) => {
+const Student1 = ({ name, classNo, age, result, language,myObj }) => {
   return (
     <>
       <div className="student py-2">
@@ -21,4 +21,4 @@ const Student = ({ name, classNo, age, result, language,myObj }) => {
   );
 };
 
-export default Student;
+export default Student1;
