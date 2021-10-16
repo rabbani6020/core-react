@@ -11,8 +11,8 @@ const Clock = () => {
   return (
     <>
       <div className="mother-clock">
-        <Clock1 />
-        {/* <Clock2 /> */}
+        {/* <Clock1 /> */}
+        <Clock2 />
         {/* <Clock3 /> */}
       </div>
     </>

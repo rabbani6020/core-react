@@ -1,10 +1,13 @@
 import React from "react";
 
+import Child from "./child";
+
 class Clock2 extends React.Component {
   constructor() {
     super();
     this.state = {
       date: new Date(),
+      name: "Rabbani",
     };
   }
 
@@ -22,11 +25,25 @@ class Clock2 extends React.Component {
     });
   };
 
+  nameChangeHandler = () => {
+    this.setState({
+      name: "Golam ",
+    });
+  };
+
   render() {
-    const { date } = this.state;
+    const { date, name } = this.state;
     return (
       <>
-        <h2>{date.toLocaleTimeString("en-US")}</h2>
+        <div className="py-5">
+          <div className="container">
+            <div className="row col-lg-10  mx-auto">
+              <h2>{date.toLocaleTimeString("en-US")}</h2>
+              <h3>{name}</h3>
+              <Child nameChangeHandler={this.nameChangeHandler} />
+            </div>
+          </div>
+        </div>
       </>
     );
   }

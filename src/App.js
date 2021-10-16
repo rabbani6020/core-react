@@ -21,6 +21,9 @@ import Service from "./components/pages/service";
 import Blog from './components/pages/blog';
 import Contact from './components/pages/contact';
 
+import Login from './components/login';
+
+
 // app component
 function App() {
   return (
@@ -42,6 +45,7 @@ function App() {
             </Route>
             <Route exact path="/">
               <Home />
+              <Login />
             </Route>
           </Switch>
         </Layout>
