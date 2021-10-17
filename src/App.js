@@ -23,6 +23,8 @@ import Contact from './components/pages/contact';
 
 import Login from './components/login';
 
+import Post from './components/post';
+
 
 // app component
 function App() {

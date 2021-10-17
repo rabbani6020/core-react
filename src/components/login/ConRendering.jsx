@@ -25,7 +25,7 @@ class ConRendering extends Component {
 
     return (
       <>
-        <div className="login-panel">
+        <div className="login-panel py-4">
           <div className="panel-heading">
             <h2 className="title">
               {isLogedIn

@@ -1,5 +1,5 @@
-
-import ConRendering from './ConRendering'
+import ConRendering from "./ConRendering";
+import LogInControl from "./logincontrol";
 
 const Login = () => {
   return (
@@ -7,7 +7,8 @@ const Login = () => {
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-10 mx-auto">
-              <ConRendering />
+            <ConRendering />
+            <LogInControl />
           </div>
         </div>
       </div>

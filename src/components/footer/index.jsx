@@ -8,7 +8,7 @@ const Footer = () => {
               <div className="social-wrap">
                 <ul className="social social--style-1">
                   <li className="social__item">
-                    <a
+                    <a target="_blank"
                       href="https://www.facebook.com/"
                       className="social__link"
                     >
@@ -16,12 +16,12 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="social__item">
-                    <a href="https://www.twitter.com/" className="social__link">
+                    <a target="_blank" href="https://www.twitter.com/" className="social__link">
                       <i className="fa-brands fa-twitter"></i>
                     </a>
                   </li>
                   <li className="social__item">
-                    <a
+                    <a target="_blank"
                       href="https://www.linkedin.com/"
                       className="social__link"
                     >
@@ -29,7 +29,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="social__item">
-                    <a
+                    <a target="_blank"
                       href="https://www.linkedin.com/"
                       className="social__link"
                     >
