@@ -24,6 +24,7 @@ import Contact from './components/pages/contact';
 import Login from './components/login';
 
 import Post from './components/post';
+import List from './components/list'
 
 
 // app component
@@ -46,8 +47,7 @@ function App() {
               <Contact />
             </Route>
             <Route exact path="/">
-              <Home />
-              <Login />
+              <List />
             </Route>
           </Switch>
         </Layout>

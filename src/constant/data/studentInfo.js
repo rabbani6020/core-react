@@ -1,0 +1,42 @@
+export const studentListData = [
+  {
+    id: 1,
+    name: "Md. Golam Rabbani",
+    age: 25,
+    email: "rabbani.cse.69@gmail.com",
+    mobileNo: "01722222222",
+    address: "Dhaka,Bangladesh",
+  },
+  {
+    id: 2,
+    name: "Shahin Ahmed",
+    age: 24,
+    email: "sagor@gmail.com",
+    mobileNo: "01722222222",
+    address: "Dhaka,Bangladesh",
+  },
+  {
+    id: 3,
+    name: "Abdur Rahim",
+    age: 28,
+    email: "rahim@gmail.com",
+    mobileNo: "01730616020",
+    address: "Dhaka,Bangladesh",
+  },
+  {
+    id: 4,
+    name: "Jakir Hossain",
+    age: 25,
+    email: "jakir@gmail.com",
+    mobileNo: "01551222545",
+    address: "Dhaka,Bangladesh",
+  },
+  {
+    id: 5,
+    name: "Mr. Rashid",
+    age: 28,
+    email: "rashid@gmail.com",
+    mobileNo: "01551222545",
+    address: "Dhaka,Bangladesh",
+  },
+];
