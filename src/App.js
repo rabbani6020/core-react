@@ -24,8 +24,9 @@ import Contact from './components/pages/contact';
 import Login from './components/login';
 
 import Post from './components/post';
-import List from './components/list'
+import List from './components/list';
 
+import UserForm from './components/user-form/index';
 
 // app component
 function App() {
@@ -46,8 +47,11 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
+            <Route path="/register">
+              <UserForm />
+            </Route>
             <Route exact path="/">
-              <List />
+              <Home />
             </Route>
           </Switch>
         </Layout>

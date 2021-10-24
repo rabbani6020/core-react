@@ -1,4 +1,3 @@
-
 // External imports
 import { Link } from "react-router-dom";
 
@@ -34,6 +33,11 @@ const Header = () => {
                   <li className="menu__item">
                     <Link to="/blog" className="menu__link">
                       Blog
+                    </Link>
+                  </li>
+                  <li className="menu__item">
+                    <Link to="/register" className="menu__link">
+                      Register
                     </Link>
                   </li>
                   <li className="menu__item">

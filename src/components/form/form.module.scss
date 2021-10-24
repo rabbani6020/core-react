@@ -1,0 +1,20 @@
+.form {
+  padding: 30px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.showOutput {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.showOutputBox {
+  padding: 40px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 10px;
+}

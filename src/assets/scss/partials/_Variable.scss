@@ -20,7 +20,11 @@ $color-gray: #f6f6f6;
   --color-secondary: #101213;
 
   --color-linearGradient1: linear-gradient(90deg, #ff8345 0%, #f85c70 100%);
-  --color-linearGradient1Hover: linear-gradient(90deg, #f85c70 0%, #ff8345 100%);
+  --color-linearGradient1Hover: linear-gradient(
+    90deg,
+    #f85c70 0%,
+    #ff8345 100%
+  );
 
   --color-white: #fff;
   --color-black: #000;
@@ -28,9 +32,9 @@ $color-gray: #f6f6f6;
   --color-body: #545454;
   --color-border: #e7e7e7;
 
-  --color-gray: #f6f6f6;
+  --color-grey: #f6f6f6;
 
-
+  --font-body: "Roboto", sans-serif;
 }
 
 // brakpoints

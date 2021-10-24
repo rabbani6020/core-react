@@ -3,6 +3,7 @@ const List = () => {
   return (
     <>
       <StudentList />
+      
     </>
   );
 };
