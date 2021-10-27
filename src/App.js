@@ -15,18 +15,25 @@ import Layout from "./components/layout";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from './components/pages/home';
+import Home from "./components/pages/home";
 import About from "./components/pages/about";
 import Service from "./components/pages/service";
-import Blog from './components/pages/blog';
-import Contact from './components/pages/contact';
+import Blog from "./components/pages/blog";
+import Contact from "./components/pages/contact";
 
-import Login from './components/login';
+import Login from "./components/login";
 
-import Post from './components/post';
-import List from './components/list';
+import Post from "./components/post";
+import List from "./components/list";
 
-import UserForm from './components/user-form/index';
+import UserForm from "./components/user-form/index";
+
+import ParentComp from "./components/life-cycle/mounting/parentComp";
+
+import LifeCycle from "./components/life-cycle";
+import LifeCycleSmart from "./components/life-cycle/mounting/life-cycle-smar";
+
+import PostGrid from "./components/post-grid";
 
 // app component
 function App() {
@@ -51,7 +58,7 @@ function App() {
               <UserForm />
             </Route>
             <Route exact path="/">
-              <Home />
+              <PostGrid />
             </Route>
           </Switch>
         </Layout>
