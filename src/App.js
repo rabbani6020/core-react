@@ -34,6 +34,10 @@ import LifeCycle from "./components/life-cycle";
 import LifeCycleSmart from "./components/life-cycle/mounting/life-cycle-smar";
 
 import PostGrid from "./components/post-grid";
+import PureCompDemo from "./components/pure-component";
+import ErrorHanding from "./components/error-handling";
+import Hoc from "./components/hoc";
+import RenderProps from "./components/render-props";
 
 // app component
 function App() {
@@ -58,7 +62,8 @@ function App() {
               <UserForm />
             </Route>
             <Route exact path="/">
-              <PostGrid />
+              <Hoc />
+              <RenderProps />
             </Route>
           </Switch>
         </Layout>
