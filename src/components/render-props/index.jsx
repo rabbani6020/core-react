@@ -9,14 +9,14 @@ class RenderProps extends React.Component {
   render() {
     return (
       <>
-        <RenderPropsComp countTimes={5}
+        <RenderPropsComp 
           render={(count, incrementHandler) => {
             return (
               <OnClickComp count={count} incrementHandler={incrementHandler} />
             );
           }}
         />
-        <RenderPropsComp countTimes={10}
+        <RenderPropsComp 
           render={(count, incrementHandler) => {
             return (
               <OnHoverComp count={count} incrementHandler={incrementHandler} />

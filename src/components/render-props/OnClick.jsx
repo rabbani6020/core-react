@@ -5,7 +5,7 @@ class OnClickComp extends React.Component {
     const { count, incrementHandler } = this.props;
     return (
       <>
-        <button className="btn btn-success" onClick={incrementHandler}>Clicked {count} times</button>
+        <button className="btn btn-success" onClick={() => incrementHandler(10)}>Clicked {count} times</button>
       </>
     );
   }

@@ -38,6 +38,8 @@ import PureCompDemo from "./components/pure-component";
 import ErrorHanding from "./components/error-handling";
 import Hoc from "./components/hoc";
 import RenderProps from "./components/render-props";
+import ContextApiDemo from "./components/context-api";
+import ContextDemo from "./components/context_demo";
 
 // app component
 function App() {
@@ -62,8 +64,7 @@ function App() {
               <UserForm />
             </Route>
             <Route exact path="/">
-              <Hoc />
-              <RenderProps />
+              <ContextDemo />
             </Route>
           </Switch>
         </Layout>

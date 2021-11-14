@@ -8,10 +8,10 @@ class RenderPropsComp extends React.Component {
     };
   }
 
-  incrementHandler = () => {
+  incrementHandler = (countTimes) => {
     this.setState((prevState) => {
       return {
-        count: prevState.count + this.props.countTimes,
+        count: prevState.count + countTimes,
       };
     });
   };
