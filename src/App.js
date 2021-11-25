@@ -40,8 +40,15 @@ import Hoc from "./components/hoc";
 import RenderProps from "./components/render-props";
 import ContextApiDemo from "./components/context-api";
 import ContextDemo from "./components/context_demo";
+import UseSateComp from "./components/hooks/part_1/useState";
+import HttpReqeustDemo from "./components/http_request/http_req";
+import UseStateComp from "./components/hooks/part_2/use_state";
+import UseStateComp2 from "./components/hooks/part_2/use_state_2";
+import UseEffectComp from "./components/hooks/part_2/use_effect";
+import UseEffectOneComp from "./components/hooks/part_3/use_effect_1";
+import HooksComp1 from "./components/hooks/part_4";
+import FetchWithFilter from "./components/hooks/part_5";
 
-// app component
 function App() {
   return (
     <>
@@ -64,7 +71,7 @@ function App() {
               <UserForm />
             </Route>
             <Route exact path="/">
-              <ContextDemo />
+              <FetchWithFilter />
             </Route>
           </Switch>
         </Layout>

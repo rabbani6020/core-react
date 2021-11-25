@@ -25,7 +25,7 @@ class StudentList extends Component {
         <div className="student-list-table py-5">
           <h2 className="title text-center mb-4">Student List</h2>
           <table className="table table-bordered table-responsive align-middle">
-            <thead class="table-head-primary">
+            <thead className="table-head-primary">
               <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
