@@ -7,22 +7,30 @@ const FetchWithFilter = () => {
   const [searchById, setSearchById] = useState("");
 
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => setPosts(response.data))
-      .catch((error) => console.log(error));
-  }, []);
+    if (!searchById) {
+      axios
+        .get(`https://jsonplaceholder.typicode.com/posts`)
+        .then((response) => {
+          setPosts(response.data);
+        })
+        .catch((error) => console.log(error));
+    } else {
+      axios
+        .get(`https://jsonplaceholder.typicode.com/posts/${searchById}`)
+        .then((response) => setPosts([response.data]))
+        .catch((error) => console.log(error));
+    }
+  }, [searchById]);
 
-  const searchItems = (e) => {
-    setSearchById(e.target.value);
-
-    axios
-      .get(`https://jsonplaceholder.typicode.com/posts/${e.target.value}`)
-      .then((response) => {
-        setPosts([response.data]);
-      })
-      .catch((error) => console.log(error));
-  };
+  //   const searchItems = (e) => {
+  //     setSearchById(e.target.value);
+  //   axios
+  //     .get(`https://jsonplaceholder.typicode.com/posts/${e.target.value}`)
+  //     .then((response) => {
+  //       setPosts([response.data]);
+  //     })
+  //     .catch((error) => console.log(error));
+  // };
 
   return (
     <>
@@ -36,7 +44,7 @@ const FetchWithFilter = () => {
               type="text"
               className="form-control"
               value={searchById}
-              onChange={searchItems}
+              onChange={(e) => setSearchById(e.target.value)}
             />
           </div>
 

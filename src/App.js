@@ -48,6 +48,11 @@ import UseEffectComp from "./components/hooks/part_2/use_effect";
 import UseEffectOneComp from "./components/hooks/part_3/use_effect_1";
 import HooksComp1 from "./components/hooks/part_4";
 import FetchWithFilter from "./components/hooks/part_5";
+import UseReducerDemoComp from "./components/hooks/use_reducer/part_1";
+import UseReducerTwo from "./components/hooks/use_reducer/part_2";
+
+import UseReducerFetchPosts from "./components/hooks/use_reducer/part_3";
+import UseContextDemoTwo from "./components/use_context";
 
 function App() {
   return (
@@ -71,7 +76,7 @@ function App() {
               <UserForm />
             </Route>
             <Route exact path="/">
-              <FetchWithFilter />
+              <UseContextDemoTwo />
             </Route>
           </Switch>
         </Layout>
