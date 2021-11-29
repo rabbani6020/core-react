@@ -53,6 +53,7 @@ import UseReducerTwo from "./components/hooks/use_reducer/part_2";
 
 import UseReducerFetchPosts from "./components/hooks/use_reducer/part_3";
 import UseContextDemoTwo from "./components/use_context";
+import FetchDataWithUseReducer from "./components/hooks/use_reducer/part_5";
 
 function App() {
   return (
@@ -76,7 +77,7 @@ function App() {
               <UserForm />
             </Route>
             <Route exact path="/">
-              <UseContextDemoTwo />
+              <FetchDataWithUseReducer />
             </Route>
           </Switch>
         </Layout>
