@@ -56,6 +56,8 @@ import UseContextDemoTwo from "./components/use_context";
 import FetchDataWithUseReducer from "./components/hooks/use_reducer/part_5";
 import CardCompOne from "./components/styles/part_1/card";
 import CustomHookOne from "./components/hooks/custom_hook/part_1";
+import UseMemoDemo from "./components/hooks/use_memo";
+import UseCallBackDemo from "./components/hooks/use_callback";
 
 function App() {
   return (
@@ -79,7 +81,8 @@ function App() {
               <UserForm />
             </Route>
             <Route exact path="/">
-              <CustomHookOne />
+              <UseMemoDemo />
+              {/* <UseCallBackDemo /> */}
             </Route>
           </Switch>
         </Layout>
