@@ -4,6 +4,9 @@ import "./assets/dependency/font-awesome-v6/css/all.css";
 //import app scss
 import "./assets/scss/app.scss";
 
+import store from "../src/redux/store";
+import { Provider } from "react-redux";
+
 // internal imports
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -58,35 +61,56 @@ import CardCompOne from "./components/styles/part_1/card";
 import CustomHookOne from "./components/hooks/custom_hook/part_1";
 import UseMemoDemo from "./components/hooks/use_memo";
 import UseCallBackDemo from "./components/hooks/use_callback";
+import CustomHookPart2 from "./components/hooks/custom_hook_part-2";
+import ReduxCompDemoOne from "./components/redux-comp/product/product_1";
+import ReduxCompDemoTwo from "./components/redux-comp/product/product_2";
+import CounterOneDemo from "./components/redux-comp/counter-comp/counter_1";
+import CounterTwoDemo from "./components/redux-comp/counter-comp/counter_2";
+import PostReduxComp from "./components/redux-comp/post/post_redux_comp";
 
 function App() {
   return (
     <>
-      <Router>
-        <Layout>
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/service">
-              <Service />
-            </Route>
-            <Route path="/blog">
-              <Blog />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/register">
-              <UserForm />
-            </Route>
-            <Route exact path="/">
-              <UseMemoDemo />
-              {/* <UseCallBackDemo /> */}
-            </Route>
-          </Switch>
-        </Layout>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <Layout>
+            <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/service">
+                <Service />
+              </Route>
+              <Route path="/blog">
+                <Blog />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/register">
+                <UserForm />
+              </Route>
+              <Route exact path="/">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="py-5">
+                      <ReduxCompDemoOne />
+                      <ReduxCompDemoTwo />
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="py-5">
+                      <CounterOneDemo />
+                      <CounterTwoDemo />
+                      <PostReduxComp />
+                    </div>
+                  </div>
+                </div>
+              </Route>
+            </Switch>
+          </Layout>
+        </Router>
+      </Provider>
     </>
   );
 }

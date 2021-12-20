@@ -20,9 +20,8 @@ const UseMemoDemo = () => {
   return (
     <>
       <div className="py-5">
-        <h2 class="text-center mb-3">UseMemoDemo</h2>
-        <h2 class="text-center mb-3">
-          {" "}
+        <h2 className="text-center mb-3">UseMemoDemo</h2>
+        <h2 className="text-center mb-3">
           test Counter Function return value {testInc}
         </h2>
         <div className="row justify-content-center">
